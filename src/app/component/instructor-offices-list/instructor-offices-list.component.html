@@ -1,12 +1,13 @@
 <div class="container">
   <br />
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a [routerLink]="['/student-list']">Instructor</a>
-      </li>
-      <li class="breadcrumb-item active" aria-current="page">Offices</li>
-    </ol>
+
+    <nav aria-label="breadcrumb">
+     <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+          <a [routerLink]="['/student-list']">Instructor</a>
+         </li>
+        <li class="breadcrumb-item active" aria-current="page">Offices</li>
+      </ol>
   </nav>
 
   <div class="form-row" *ngIf="showMsg">
@@ -32,17 +33,19 @@
           name="Location"
           class="form-control"
         />
+
+
         <div class="btn-group" role="group">
           <button class="btn btn-outline-primary btn-sm" (click)="saveOffice()">
-            Save
+          Save
           </button>
         </div>
       </div>
     </div>
     <a
+
       class="btn btn-outline-primary btn-sm"
       [routerLink]="['/instructor-list']"
-      >Back</a
-    >
+      >Back</a>
   </div>
 </div>

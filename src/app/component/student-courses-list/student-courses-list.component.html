@@ -31,7 +31,7 @@
                     <td>{{ enrollment.Course.Title }}</td>
                     <td>{{ enrollment.Course.Credits }}</td>  
                     <td>
-                        <button class="btn btn-sm btn-outline-danger" (click)="deleteEnrollment(enrollment.EnrollmentID)">Delete</button>
+                        <button class="btn btn-sm btn-danger" (click)="deleteEnrollment(enrollment.EnrollmentID)">Delete</button>
                     </td>  
                 </tr>
             </tbody>
@@ -45,5 +45,5 @@
         <option *ngFor="let course of courses" [value]="course.CourseID" >{{ course.Title }}</option>
     </select>
     <br>
-    <button class="btn btn-sm btn-outline-primary" (click)="saveEnrollment()">Add</button>
+    <button class="btn btn-sm btn-primary" (click)="saveEnrollment()">Add</button>
 </div>

@@ -1,6 +1,7 @@
 <div class="container">
     <h2>Delete CourseInstructor</h2>
   
+
     <div class="form-row" *ngIf="!showMsg">
       <div class="alert alert-danger col-md-12" role="alert">
         Are You Sure?
@@ -12,6 +13,8 @@
       </div>
     </div>
   
+
+
     <div class="form-row" *ngIf="showMsg">
       <div class="alert alert-{{type}} col-md-12" role="alert">
         {{msg}}
@@ -20,6 +23,7 @@
       </div>
     </div>
   
+
     <form #courseInstructorForm="ngForm">
         <div class="form-row">
           <div class="col-md-4">
@@ -34,6 +38,8 @@
               [(ngModel)]="courseInstructor.CourseID"
               readonly
             />
+
+
           </div>
           <div class="col-md-4">
             <label>InstructorID:</label>
@@ -46,6 +52,7 @@
               #instructorID
               [(ngModel)]="courseInstructor.InstructorID"
               readonly
+              
             />
           </div>
         </div>

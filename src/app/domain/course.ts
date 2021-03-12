@@ -1,7 +1,7 @@
 export class Course {
-    constructor(
+     constructor(
         public CourseID: number,
-        public Title: string,
+         public Title: string,
         public Credits: number
         ) { }
 }

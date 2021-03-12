@@ -7,43 +7,47 @@
     </div>
   </div>
 
-  <form #departmentForm="ngForm">
-    <div class="form-row">
-      <div class="col-md-4">
+   <form #departmentForm="ngForm">
+     <div class="form-row">
+          <div class="col-md-4">
         <label>Name:</label>
         <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enther the name"
+            type="text"
+            id="name"
+             name="name"
+             placeholder="Enther the name"
           class="form-control"
           #name
-          [(ngModel)]="department.Name"
-        />
+           [(ngModel)]="department.Name"
+         />
       </div>
-      <div class="col-md-4">
+       <div class="col-md-4">
         <label>Budget:</label>
-        <input
-          type="text"
-          id="budget"
-          name="budget"
-          placeholder="Enther the budget"
-          class="form-control"
+         <input
+           type="text"
+           id="budget"
+           name="budget"
+           placeholder="Enther the budget"
+           class="form-control"
           #budget
           [(ngModel)]="department.Budget"
         />
+
       </div>
       <div class="col-md-4">
         <label>StartDate:</label>
         <input
-          type="date"
-          id="startDate"
-          name="startDate"
-          placeholder="Enther the start date"
-          class="form-control"
-          #startDate
+           type="date"
+            id="startDate"
+            name="startDate"
+            placeholder="Enther the start date"
+           class="form-control"
+            #startDate
           [(ngModel)]="department.StartDate"
         />
+
+
+
       </div>
       <div class="col-md-4">
         <label>InstructorID:</label>
@@ -54,6 +58,7 @@
           [(ngModel)]="department.InstructorID"
           #InstructorID
         >
+        
           <option *ngFor="let instructor of instructors" [value]="instructor.ID">
             {{ instructor.FullName }}
           </option>
@@ -69,8 +74,8 @@
       <a
         class="btn btn-outline-primary btn-sm"
         [routerLink]="['/department-list']"
-        >Back</a
-      >
+        
+        >Back</a>
     </div>
   </form>
 </div>

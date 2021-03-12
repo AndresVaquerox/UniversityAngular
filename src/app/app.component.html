@@ -1,8 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">
     <img src="./assets/images/angular-icon.svg" width="30" height="30" alt="" />
     University
   </a>
+
+  
   <button
     class="navbar-toggler"
     type="button"
@@ -17,11 +19,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/course-list']" aria-current="page">
-          Courses
-        </a>
-      </li>
+      
       <li class="nav-item">
         <a
           class="nav-link"
@@ -34,19 +32,35 @@
       <li class="nav-item">
         <a
           class="nav-link"
-          [routerLink]="['/instructor-list']"
+          [routerLink]="['/enrollment-list']"
           aria-current="page"
         >
-          Instructors
+          Enrollments
         </a>
       </li>
       <li class="nav-item">
         <a
           class="nav-link"
-          [routerLink]="['/enrollment-list']"
+          [routerLink]="['/instructor-list']"
           aria-current="page"
         >
-          Enrollments
+        
+          Instructors
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [routerLink]="['/officeAssignment-list']"
+          aria-current="page"
+        >
+          OfficeAssignments
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/course-list']" aria-current="page">
+          Courses
         </a>
       </li>
       <li class="nav-item">
@@ -67,15 +81,7 @@
           Departments
         </a>
       </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          [routerLink]="['/officeAssignment-list']"
-          aria-current="page"
-        >
-          OfficeAssignments
-        </a>
-      </li>
+      
     </ul>
   </div>
 </nav>

@@ -7,6 +7,7 @@
     </div>
   </div>
 
+
   <form #enrollmentForm="ngForm">
     <div class="form-row">
       <div class="col-md-4">
@@ -18,27 +19,31 @@
           [(ngModel)]="enrollment.CourseID"
           #CourseID
         >
+
+
           <option *ngFor="let course of courses" [value]="course.CourseID">
             {{ course.Title }}
           </option>
-        </select>
-      </div>
-      <div class="col-md-4">
+          </select>
+        </div>
+        <div class="col-md-4">
         <label>StudentID:</label>
         <select
           class="form-control"
           id="StudentID"
           name="StudentID"
-          [(ngModel)]="enrollment.StudentID"
+            [(ngModel)]="enrollment.StudentID"
           #StudentID
         >
+
+
           <option *ngFor="let student of students" [value]="student.ID">
-            {{ student.FullName }}
+              {{ student.FullName }}
           </option>
         </select>
-      </div>
-      <div class="col-md-4">
-        <label>Grade:</label>
+        </div>
+        <div class="col-md-4">
+          <label>Grade:</label>
         <input
           type="number"
           id="grade"
